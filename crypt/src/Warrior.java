@@ -3,7 +3,7 @@
  */
 public class Warrior extends Character {
 
-    //private String weapon;
+    private int swordHeatPoints = 25;
 
     public Warrior(String name, int lifePoints, int strenght, int dexterity) {
         super(name, lifePoints, strenght, dexterity, "sword");
@@ -12,16 +12,20 @@ public class Warrior extends Character {
 
     @Override
     public void atack() {
+        int attackValue = swordHeatPoints + this.getStrenght();
+        System.out.println(getName()+" has: "+getWeapon() +" and his attack power is: "+ attackValue);
 
-    }
+}
 
     @Override
     public void block() {
+
 
     }
 
     @Override
     public void restoreLifePoints() {
+
 
     }
 }

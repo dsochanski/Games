@@ -2,7 +2,7 @@
  * Created by tadeuszx on 3/29/2018.
  */
 public class Goblin extends Character {
-
+    private int daggerHitPoints = 10;
 
 
     public Goblin(String name, int lifePoints, int strenght, int dexterity) {
